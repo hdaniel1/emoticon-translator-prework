@@ -3,6 +3,7 @@ require 'yaml'
 def load_library(file)
   # code goes here
   translations = YAML.load_file('file.yml')
+  translations
 end
 
 def get_japanese_emoticon
