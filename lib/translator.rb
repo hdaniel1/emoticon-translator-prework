@@ -4,15 +4,15 @@ require "pry"
 
 def load_library(file)
   # code goes here
-  get_emoticon = []
-  get_meaning = []
+  get_emoticon = {}
+  get_meaning = {}
   translation_hash = {}
   translations = YAML.load_file(file)
 
     translations.each do |meaning, emoticons|
-      get_meaning.push(meaning)
+      get_meaning[meaning] = nil
       emoticons.each do |emoticon|
-        get_emoticon.push(emoticon)
+        get_emoticon[emoticon] = nil
       end
     end
     translation_hash["get_emoticon"] = get_emoticon
