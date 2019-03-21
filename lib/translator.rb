@@ -4,6 +4,7 @@ require "yaml"
 def load_library(file)
   # code goes here
   translations = YAML.load_file(file)
+  binding.pry
 end
 
 def get_japanese_emoticon
