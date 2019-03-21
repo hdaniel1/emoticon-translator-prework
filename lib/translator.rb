@@ -1,6 +1,6 @@
 # require modules here
 require 'yaml'
-def load_library(file)
+def load_library(file.yml)
   # code goes here
   translations = YAML.load_file(file.yml)
 end
